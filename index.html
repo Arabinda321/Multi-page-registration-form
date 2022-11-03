@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <form id="form1" action="">
+            <fieldset id="step-1">
+                <legend>STEP - 1</legend>
+
+                <label class="star" for="">Name</label><br>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="First" id="fn" required></td>
+                        <td><input type="text" placeholder="Last" id="ln" required="required"></td>
+                    </tr>
+                </table><br>
+
+                <label class="star" for="">Date of Birth</label><br>
+                <input style="width: 342px ;" type="date" id="dob"><br><br>
+
+                <label class="star" for="">Email</label><br>
+                <input type="text" id="email" required><br><br>
+
+                <label class="star" for="">Father's name</label>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="First" id="fn1"></td>
+                        <td><input type="text" placeholder="Last" id="ln1"></td>
+                    </tr>
+                </table><br>
+
+                <label class="star" for="">Maother's name</label>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="First" id="fn2"></td>
+                        <td><input type="text" placeholder="Last" id="ln2"></td>
+                    </tr>
+                </table><br>
+
+                <label class="star" for="">Gender </label>
+                <input type="radio" name="gender" value="male" id="gmale">M
+                <input type="radio" name="gender" value="female" id="gfemale">F
+                <br><br>
+
+                <label class="star" for="">Nationality</label>
+                <input type="text" id="nationality"><br><br>
+
+                <label class="star" for="">Home Address</label><br>
+                <input type="text" placeholder="Street Address" id="home"><br><br>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="City" id="city"></td>
+                        <td><input type="text" placeholder="Country" id="country"></td>
+                    </tr>
+                </table><br>
+
+                <label for="">Telephone-Home</label><br>
+                <input type="text" placeholder="### ### ####" id="phHome"><br><br>
+
+                <label class="star" for="">Telephone-Mobile</label><br>
+                <input type="text" placeholder="### ### ####" id="phMobile"><br><br>
+
+                <div id="btn" 1>
+                    <button type="button" id="next1">Next</button>
+                </div>
+            </fieldset>
+    </div>
+    </form>
+
+
+
+    <form id="form2" action="">
+        <fieldset id="step-2">
+            <legend>STEP - 2</legend>
+            <table>
+                <tr>
+                    <td><label class="star" for="">HSC Institution name</label><br>
+                        <input type="text" id="hscInstituteName">
+                    </td>
+
+                    <td>
+                        <label class="star" for="">HSC Board</label><br>
+                        <select name="hscBoard" id="hscBoard">
+                            <option value="0">--choose an option--</option>
+                            <option value="CBSC">CBSC</option>
+                            <option value="ICSC">ICSC</option>
+                            <option value="State Board">State Board</option>
+                        </select>
+                    </td>
+
+                    <td><label class="star" for="">Score in HSC</label><br>
+                        <input type="text" placeholder="in percentage" id="hscScore">
+                    </td>
+                </tr>
+            </table><br>
+
+            <table>
+                <tr>
+                    <td><label class="star" for="">SSC Institution name</label><br>
+                        <input type="text" id="sscInstituteName">
+                    </td>
+
+                    <td>
+                        <label class="star" for="">SSC Board</label><br>
+                        <select name="sscBoard" id="sscBoard">
+                            <option value="0">--choose an option--</option>
+                            <option value="CBSC">CBSC</option>
+                            <option value="ICSC">ICSC</option>
+                            <option value="State Board">State Board</option>
+                        </select>
+                    </td>
+
+                    <td><label class="star" for="">Score in SSC</label><br>
+                        <input type="text" placeholder="in percentage" id="sscScore">
+                    </td>
+                </tr>
+            </table><br>
+
+            <label class="star" for="">Corrently pursuing</label><br>
+            <input type="text" id="correntPursuing"><br><br>
+
+            <label for="">Current educational institution name</label><br>
+            <input type="text" id="currentEducationalInstituteName"><br><br>
+
+            <label class="star" for="">Overall percntage</label><br>
+            <input type="text" placeholder="in percentage" id="overallPercentage"><br><br>
+
+            <label class="star" for="">Current backlogs if any</label><br>
+            <input type="text" placeholder="yes/No" id="currentBacklogs"><br><br>
+            <div id="" id="btn2">
+                <button id="back1" type="button">Back</button>
+                <button id="next2" type="button">Next</button>
+            </div>
+        </fieldset>
+    </form>
+
+
+
+    <form id="form3" action="">
+        <fieldset id="step-3">
+            <legend>STEP - 3</legend>
+            <label class="star" for="">Recent passport size photograph</label><br><br>
+            <input type="file" id="passportPhoto"><br><br><br>
+
+            <label class="star" for="">HSC mark sheet</label>
+            <input type="file" id="hscMarkSheet"><br><br><br>
+
+            <label class="star" for="">SSC mark sheet</label>
+            <input type="file" id="sscMarkSheet"><br> <br><br>
+
+            <label class="star" for="">All semester's mark sheet in a single PDF/docs</label><br><br>
+            <input type="file" id="semesterMarksheets"><br><br><br>
+
+            <div id="btn3">
+                <button id="back2" type="button">Back</button>
+                <button id="sub" type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+
+    <script type="text/javascript">
+        var form1 = document.getElementById('form1');
+        var form2 = document.getElementById('form2');
+        var form3 = document.getElementById('form3');
+
+        var next1 = document.getElementById('next1');
+        var next2 = document.getElementById('next2');
+
+        var back1 = document.getElementById('back1');
+        var back2 = document.getElementById('back2');
+
+
+        window.onload = function () {
+            form2.style.display = "none";
+            form3.style.display = "none";
+            form1.style.display = "block";
+        }
+        next1.onclick = function () {
+            var firstName = document.getElementById("fn").value;
+            var lastName = document.getElementById("ln").value;
+            var dob = document.getElementById("dob").value;
+            var email = document.getElementById("email").value;
+            var fatherFirstName = document.getElementById("fn1").value;
+            var fatherLastName = document.getElementById("ln1").value;
+            var motherFirstName = document.getElementById("fn2").value;
+            var motherLastName = document.getElementById("ln2").value;
+            var nationality = document.getElementById("nationality").value;
+            var city = document.getElementById("city").value;
+            var country = document.getElementById("country").value;
+            var phHome = document.getElementById("phHome").value;
+            var home = document.getElementById("home").value;
+            var phMobile = document.getElementById("phMobile").value;
+
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+            if (firstName == "") {
+                alert("You have to provide first name");
+                return false;
+            }
+            if (lastName == "") {
+                alert("You have to give last name");
+                return false;
+            }
+            if (dob == "") {
+                alert("please give your dob");
+                return false;
+            }
+
+            if (!(email.match(validRegex))) {
+                alert("Please give valid email address");
+                return false;
+            }
+            if (fatherFirstName == "") {
+                alert("please give your father name");
+                return false;
+            }
+            if (fatherLastName == "") {
+                alert("please give your father last name");
+                return false;
+            }
+            if (motherFirstName == "") {
+                alert("please give your mother name");
+                return false;
+            }
+            if (motherLastName == "") {
+                alert("please give your mother last name");
+                return false;
+            }
+
+            if ((!document.getElementById("gmale").checked) && (!document.getElementById("gfemale").checked)) {
+                alert("please choose a gender");
+                return false;
+            }
+            if (nationality == "") {
+                alert("please give your nationality");
+                return false;
+            }
+            if (home == "") {
+                alert("please give your Home Address");
+                return false;
+            }
+            if (city == "") {
+                alert("please give your city name");
+                return false;
+            }
+            if (country == "") {
+                alert("please give your country name");
+                return false;
+            }
+
+
+            if (phHome.length == 10) {
+                if (isNaN(phHome)) {
+                    alert("Enter valid mobile no");
+                    return false;
+                }
+            } else {
+                alert("moblie number must be 10 digit");
+                return false;
+            }
+            if (phMobile.length == 10) {
+                if (isNaN(phMobile)) {
+                    alert("Enter valid mobile no");
+                    return false;
+                }
+            } else {
+                alert("moblie number must be 10 digit");
+                return false;
+            }
+
+            form1.style.left = "-10px";
+            form2.style.right = "490px";
+            form1.style.display = "none";
+            form3.style.display = "none";
+            form2.style.display = "block";
+
+            return true;
+
+        }
+        next2.onclick = function () {
+            var hscInstituteName = document.getElementById("hscInstituteName").value;
+            var hscBoard = document.getElementById("hscBoard").value;
+            var hscScore = document.getElementById("hscScore").value;
+            var sscInstituteName = document.getElementById("sscInstituteName").value;
+            var sscBoard = document.getElementById("sscBoard").value;
+            var sscScore = document.getElementById("sscScore").value;
+            var correntPursuing = document.getElementById("correntPursuing").value;
+            var currentEducationalInstituteName = document.getElementById("currentEducationalInstituteName").value;
+            var overallPercentage = document.getElementById("overallPercentage").value;
+            var currentBacklogs = document.getElementById("currentBacklogs").value;
+
+            if (hscInstituteName == "") {
+                alert("please write your HSC Institute name");
+                return false;
+            }
+            if (hscBoard ==0) {
+                alert("please select your HSC Board");
+                return false;
+            }
+            if (hscScore =="") {
+                alert("please give your HSC mark");
+                return false;
+            }
+            if (sscInstituteName == "") {
+                alert("please write your SSC Institute name");
+                return false;
+            }
+            if (sscBoard == 0) {
+                alert("please select your SSC Board");
+                return false;
+            }
+            if (correntPursuing == "") {
+                alert("please mentioned about your current education");
+                return false;
+            }
+            if (currentEducationalInstituteName == "") {
+                alert("please write your current Educational Institute Name");
+                return false;
+            }
+            if (overallPercentage == "") {
+                alert("please write your Over all percentage");
+                return false;
+            }
+            if (currentBacklogs == "") {
+                alert("please write yes/no for backlogs");
+                return false;
+            }
+
+            form2.style.right = "1100px";
+            form3.style.right = "515px";
+            form1.style.display = "none";
+            form2.style.display = "none";
+            form3.style.display = "block";
+            return true;
+        }
+        back1.onclick = function () {
+            form1.style.left = "535px";
+            form2.style.right = "-240px";
+            form1.style.display = "block";
+            form2.style.display = "none";
+            form3.style.display = "none";
+        }
+        back2.onclick = function () {
+            form2.style.right = "490px";
+            form3.style.right = "-50px";
+            form1.style.display = "none";
+            form2.style.display = "block";
+            form3.style.display = "none";
+        }
+
+
+
+        sub.onclick = function () {
+            var firstName = document.getElementById("fn").value;
+            var lastName = document.getElementById("ln").value;
+            var dob = document.getElementById("dob").value;
+            var email = document.getElementById("email").value;
+            var fatherFirstName = document.getElementById("fn1").value;
+            var fatherLastName = document.getElementById("ln1").value;
+            var motherFirstName = document.getElementById("fn2").value;
+            var motherLastName = document.getElementById("ln2").value;
+            var gender;
+            if(document.getElementById("gmale").checked){
+                gender=document.getElementById("gmale").value;
+            }
+            else{
+                gender=document.getElementById("gfemale").value;
+            }
+            var nationality = document.getElementById("nationality").value;
+            var city = document.getElementById("city").value;
+            var country = document.getElementById("country").value;
+            var phHome = document.getElementById("phHome").value;
+            var home = document.getElementById("home").value;
+            var phMobile = document.getElementById("phMobile").value;
+
+            var hscInstituteName = document.getElementById("hscInstituteName").value;
+            var hscBoard = document.getElementById("hscBoard").value;
+            var hscScore = document.getElementById("hscScore").value;
+            var sscInstituteName = document.getElementById("sscInstituteName").value;
+            var sscBoard = document.getElementById("sscBoard").value;
+            var sscScore = document.getElementById("sscScore").value;
+            var correntPursuing = document.getElementById("correntPursuing").value;
+            var currentEducationalInstituteName = document.getElementById("currentEducationalInstituteName").value;
+            var overallPercentage = document.getElementById("overallPercentage").value;
+            var currentBacklogs = document.getElementById("currentBacklogs").value;
+
+            var passportPhoto = document.getElementById("passportPhoto").value;
+            var hscMarkSheet = document.getElementById("hscMarkSheet").value;
+            var sscMarkSheet = document.getElementById("sscMarkSheet").value;
+            var semesterMarksheets = document.getElementById("semesterMarksheets").value;
+
+            if (passportPhoto == "") {
+                alert("please upload passport photo");
+                return false;
+            }
+            if (hscMarkSheet == "") {
+                alert("please upload HSC marksheet");
+                return false;
+            }
+            if (sscMarkSheet == "") {
+                alert("please upload SSC marksheet");
+                return false;
+            }
+            if (semesterMarksheets == "") {
+                alert("please upload all semester marksheets");
+                return false;
+            }
+
+
+            let userList = [];
+            if (localStorage.getItem('userList') && localStorage.getItem('userList').length > 0)
+                userList = JSON.parse(localStorage.getItem('userList'));
+            let user = {
+                firstName, lastName, dob, email, fatherFirstName, fatherLastName, motherFirstName, motherLastName, gender,
+                nationality, home, city, country, phHome, phMobile, hscInstituteName, hscBoard, hscScore,
+                sscInstituteName, sscBoard, sscScore, correntPursuing, currentEducationalInstituteName, overallPercentage, currentBacklogs,
+                passportPhoto, hscMarkSheet, sscMarkSheet, semesterMarksheets
+            };
+
+            userList.push(user);
+            localStorage.setItem('userList', JSON.stringify(userList));
+            return true;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

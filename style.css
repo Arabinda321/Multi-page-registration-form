@@ -1,0 +1,89 @@
+
+body{
+   background-image: url(back.jpg);
+   background-position: center;
+}
+#container{
+    background-color: rgb(36, 55, 55);
+    border-radius: 30px;
+    padding: 5% ;
+    height: 720px;
+    width: 450px;
+    margin: 8% auto; 
+    overflow: hidden;
+}
+form button{
+    width: 90px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0 40px;
+    background: linear-gradient(to right,rgb(238, 126, 145),rgb(209, 39, 175));
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+label{
+    color: white;
+}
+legend{
+    color: rgb(244, 204, 155);  
+}
+#step-1{
+    margin: 0% auto;
+    padding-right: 90px;
+}
+#step-2{
+    width: 0px;
+    height: 420px;
+}
+#step-3{
+    width: 450px;
+    height: 400px;
+}
+#next1{
+    position: relative;
+    left: 130px;
+}
+#next2{
+    position: absolute;
+    right: 100px;
+}
+#back1{
+    position: absolute;
+    left: 100px;
+}
+
+#back2{
+    position: absolute;
+    left: 70px;
+}
+#sub{
+    position: absolute;
+    bottom: 57px;
+    right: 70px;
+}
+
+#form1{
+    position: absolute;  
+}
+#form2{
+    position: absolute;
+    right: 20px;
+    top: 330px;
+}
+#form3{
+    position: absolute;
+    right:20px ;
+    top: 330px;
+}
+#submit{
+
+    position:absolute ;  
+    right:750px;
+    top: 1700px; 
+}
+.star::after{
+    content: "*";
+    color: red;
+}
